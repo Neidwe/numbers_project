@@ -8,3 +8,8 @@ def min_digits(number):
     return min(int(d) for d in str(abs(number)))
 def is_even(number):
     return number % 2 == 0
+def multiply_digits(number):
+    result = 1
+    for d in str(abs(number)):
+        result *= int(d)
+    return result
