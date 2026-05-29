@@ -6,3 +6,5 @@ def max_digits(number):
     return max(int(d) for d in str(abs(number)))
 def min_digits(number):
     return min(int(d) for d in str(abs(number)))
+def is_even(number):
+    return number % 2 == 0
