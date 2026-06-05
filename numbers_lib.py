@@ -17,3 +17,6 @@ def multiply_digits(number):
 def reverse_number(number):
     reversed_str = str(abs(number))[::-1]
     return int(reversed_str)
+def is_palindrome(number):
+    s = str(abs(number))
+    return s == s[::-1]
