@@ -20,3 +20,5 @@ def reverse_number(number):
 def is_palindrome(number):
     s = str(abs(number))
     return s == s[::-1]
+def count_even_digits(number):
+    return sum(1 for d in str(abs(number)) if int(d) % 2 == 0)
