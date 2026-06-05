@@ -1,3 +1,4 @@
+number = int(input("Введите число >>> "))
 def digit_sum(number: int) -> int:
     return sum(int(d) for d in str(abs(number)))
 def count_digits(number):
@@ -13,3 +14,6 @@ def multiply_digits(number):
     for d in str(abs(number)):
         result *= int(d)
     return result
+def reverse_number(number):
+    reversed_str = str(abs(number))[::-1]
+    return int(reversed_str)
