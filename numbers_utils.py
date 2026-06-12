@@ -24,3 +24,6 @@ def count_even_digits(number):
     return sum(1 for d in str(abs(number)) if int(d) % 2 == 0)
 def count_odd_digits(number):
     return sum(1 for d in str(abs(number)) if int(d) % 2 != 0)
+def first_digit(number):
+    return int(str(abs(number))[0])
+
