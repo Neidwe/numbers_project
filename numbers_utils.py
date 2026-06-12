@@ -1,6 +1,6 @@
 number = int(input("Введите число >>> "))
 def digit_sum(number: int) -> int:
-    return sum(int(digit) for digit in str(abs(number)))
+    return sum(int(d) for d in str(abs(number)))
 def count_digits(number):
     return len(str(number))
 def max_digits(number):
@@ -28,4 +28,5 @@ def first_digit(number):
     return int(str(abs(number))[0])
 def last_digit(number):
     return int(str(abs(number))[-1])
-
+def  sum_even_digits(number):
+    return sum(int(d) for d in str(abs(number))) if int(d) % 2 == 0
