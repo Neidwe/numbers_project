@@ -26,4 +26,6 @@ def count_odd_digits(number):
     return sum(1 for d in str(abs(number)) if int(d) % 2 != 0)
 def first_digit(number):
     return int(str(abs(number))[0])
+def last_digit(number):
+    return int(str(abs(number))[-1])
 
