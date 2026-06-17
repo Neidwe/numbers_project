@@ -32,4 +32,5 @@ def  sum_even_digits(number):
     return sum(int(d) for d in str(abs(number))) if int(d) % 2 == 0
 def  sum_odd_digits(number):
     return sum(int(d) for d in str(abs(number)) if int(d) % 2 != 0)
-
+def square_number(number):
+    return int(str(abs(number))) ** 2
