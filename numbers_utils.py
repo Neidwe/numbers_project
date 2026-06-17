@@ -41,3 +41,5 @@ def average_digit(number):
     return sum(digits) / len(digits)
 def is_positive(number):
     return number > 0
+def is_negative(number):
+    return number < 0
