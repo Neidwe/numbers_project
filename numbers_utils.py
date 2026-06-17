@@ -36,4 +36,5 @@ def square_number(number):
     return int(str(abs(number))) ** 2
 def cube_number(number):
     return int(str(abs(number))) ** 3
-
+def average_digit(number):
+    return sum(int(d) for d in str(abs(number))) / 2
