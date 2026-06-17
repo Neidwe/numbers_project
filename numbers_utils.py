@@ -28,8 +28,8 @@ def first_digit(number):
     return int(str(abs(number))[0])
 def last_digit(number):
     return int(str(abs(number))[-1])
-def  sum_even_digits(number):
-    return sum(int(d) for d in str(abs(number))) if int(d) % 2 == 0
+def sum_even_digits(number):
+    return sum(int(d) for d in str(abs(number)) if int(d) % 2 == 0)
 def  sum_odd_digits(number):
     return sum(int(d) for d in str(abs(number)) if int(d) % 2 != 0)
 def square_number(number):
@@ -39,3 +39,5 @@ def cube_number(number):
 def average_digit(number):
     digits = [int(d) for d in str(abs(number))]
     return sum(digits) / len(digits)
+def is_positive(number):
+    return number > 0
